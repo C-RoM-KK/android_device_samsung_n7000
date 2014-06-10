@@ -9,7 +9,7 @@
                 "remote": "slim",
 		"repository": "device_samsung_galaxys2-common",
 		"target_path": "device/samsung/galaxys2-common",
-                "revision": "kitkat"
+                "revision": "kk4.4"
 	},
 	{
                 "remote": "crm",
