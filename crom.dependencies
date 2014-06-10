@@ -6,8 +6,8 @@
                 "revision": "cm-11.0"
 	},
 	{
-                "remote": "crm",
-		"repository": "android_device_samsung_galaxys2-common",
+                "remote": "slim",
+		"repository": "device_samsung_galaxys2-common",
 		"target_path": "device/samsung/galaxys2-common",
                 "revision": "kitkat"
 	},
