@@ -14,8 +14,6 @@
 # limitations under the License.
 #
 
-# Specify phone tech before including full_phone
-$(call inherit-product, vendor/slim/config/gsm.mk)
 
 # Release name
 PRODUCT_RELEASE_NAME := n7000
@@ -24,15 +22,19 @@ PRODUCT_RELEASE_NAME := n7000
 TARGET_SCREEN_HEIGHT := 1280
 TARGET_SCREEN_WIDTH := 800
 
-# Inherit some common Slim stuff.
-$(call inherit-product, vendor/slim/config/common_full_phone.mk)
+# Inherit from our Crom product configuration
+$(call inherit-product, vendor/crom/config/common_phone.mk)
+
+# bootanimation
+PRODUCT_COPY_FILES += \
+    vendor/crom/prebuilt/common/media/xhdpi/BOOTANIMATION-1280x768.zip:system/media/bootanimation.zip
 
 # Inherit device configuration
 $(call inherit-product, device/samsung/n7000/full_n7000.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := n7000
-PRODUCT_NAME := slim_n7000
+PRODUCT_NAME := crom_n7000
 PRODUCT_BRAND := Samsung
 PRODUCT_MODEL := GT-N7000
 
