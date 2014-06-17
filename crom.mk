@@ -25,9 +25,6 @@ TARGET_SCREEN_WIDTH := 800
 # Inherit from our Crom product configuration
 $(call inherit-product, vendor/crom/config/common_phone.mk)
 
-# bootanimation
-PRODUCT_COPY_FILES += \
-    vendor/crom/prebuilt/common/media/xhdpi/BOOTANIMATION-1280x768.zip:system/media/bootanimation.zip
 
 # Inherit device configuration
 $(call inherit-product, device/samsung/n7000/full_n7000.mk)
