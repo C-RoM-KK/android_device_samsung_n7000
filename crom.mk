@@ -18,9 +18,9 @@
 # Release name
 PRODUCT_RELEASE_NAME := n7000
 
-# Bootanimation
-TARGET_SCREEN_HEIGHT := 1280
-TARGET_SCREEN_WIDTH := 800
+# Boot animation
+TARGET_SCREEN_HEIGHT := 800
+TARGET_SCREEN_WIDTH := 480
 
 # Inherit from our Crom product configuration
 $(call inherit-product, vendor/crom/config/common_phone.mk)
